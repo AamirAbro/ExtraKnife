@@ -1,0 +1,36 @@
+package com.aamirabro.app;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setText("some text");
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain2();
+            }
+        });
+    }
+
+    private void openMain2 () {
+        if (Math.random() >= 0.5) {
+            Intent intent = new Intent(this, Main2Activity.class);
+            intent.putExtra("source", 2);
+        } else {
+            Intent intent = new Intent(this, Main2Activity.class);
+            intent.putExtra("extra", 2);
+        }
+    }
+}
