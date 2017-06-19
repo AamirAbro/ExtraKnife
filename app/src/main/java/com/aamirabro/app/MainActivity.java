@@ -25,12 +25,11 @@ public class MainActivity extends Activity {
     }
 
     private void openMain2 () {
-        if (Math.random() >= 0.5) {
-            Intent intent = new Intent(this, Main2Activity.class);
-            intent.putExtra("source", 2);
-        } else {
-            Intent intent = new Intent(this, Main2Activity.class);
-            intent.putExtra("extra", 2);
-        }
+        Intent intent = new Intent(this, Main2Activity.class);
+        intent.putExtra("int_source", 2);
+        intent.putExtra("long_source", 3L);
+        intent.putExtra("float_source", 6.7F);
+        intent.putExtra("double_source", 8.9D);
+        startActivity(intent);
     }
 }
