@@ -14,10 +14,10 @@ dependencies {
 
 publish {
   artifactId = 'extraknife-compiler'
+  desc = 'Annotation preprocessor for Android extras injector'
   userOrg = rootProject.userOrg
   groupId = rootProject.groupId
   publishVersion = rootProject.publishVersion
-  desc = rootProject.desc
   website = rootProject.website
   licences = rootProject.licences
 }

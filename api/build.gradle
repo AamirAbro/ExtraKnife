@@ -8,10 +8,10 @@ targetCompatibility = JavaVersion.VERSION_1_7
 
 publish {
     artifactId = 'extraknife'
+    desc = 'Android extras injector'
     userOrg = rootProject.userOrg
     groupId = rootProject.groupId
     publishVersion = rootProject.publishVersion
-    desc = rootProject.desc
     website = rootProject.website
     licences = rootProject.licences
 }

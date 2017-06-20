@@ -19,7 +19,6 @@ ext {
     userOrg = 'aamirabro'
     groupId = 'com.aamirabro'
     publishVersion = '0.5.0'
-    desc = 'Android extras injector'
     website = 'https://github.com/AamirAbro/ExtraKnife'
     licences = ['MIT']
 }
