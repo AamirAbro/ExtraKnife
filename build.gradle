@@ -3,9 +3,9 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.android.tools.build:gradle:2.3.3'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
-        classpath 'com.novoda:bintray-release:0.2.10'
+        classpath 'com.novoda:bintray-release:0.5.0'
     }
 }
 
@@ -16,12 +16,11 @@ allprojects {
 }
 
 ext {
-    userOrg = 'attwellbrian'
-    groupId = 'com.brianattwell'
-    uploadName = 'Android-StaticToStringUtil'
-    description = 'Demonstration of annotation processing inside Gradle project'
-    publishVersion = '0.3.5'
-    website = 'http://brianattwell.com'
+    userOrg = 'aamirabro'
+    groupId = 'com.aamirabro'
+    publishVersion = '0.5.0'
+    desc = 'Android extras injector'
+    website = 'https://github.com/AamirAbro/ExtraKnife'
     licences = ['MIT']
 }
 

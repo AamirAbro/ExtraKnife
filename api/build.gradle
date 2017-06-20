@@ -7,12 +7,11 @@ sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
 
 publish {
-    artifactId = 'static_string_util_api'
+    artifactId = 'extraknife'
     userOrg = rootProject.userOrg
     groupId = rootProject.groupId
-    uploadName = rootProject.uploadName
     publishVersion = rootProject.publishVersion
-    description = rootProject.description
+    desc = rootProject.desc
     website = rootProject.website
     licences = rootProject.licences
 }
